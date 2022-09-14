@@ -1,6 +1,6 @@
 public class Generics {
-    public static Double testMax(Double x,Double y,Double z){
-        Double max=x;
+    public static String testMax(String x,String y,String z){
+        String max=x;
         if(y.compareTo(max)>0){
             max=y;
         }
@@ -10,11 +10,11 @@ public class Generics {
         printMax(x,y,z,max);
         return max;
     }
-    public static void printMax(Double x,Double y,Double z,Double max){
+    public static void printMax(String x,String y,String z,String max){
         System.out.println("Max value is "+ max);
     }
 
     public static void main(String[] args) {
-        testMax(4.2,2.3,5.9);
+        testMax("Apple","Peach","Pineapple");
     }
 }
